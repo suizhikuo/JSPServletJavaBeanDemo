@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>JSPServletJavaBeanDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/front/error/error.jsp</location>
+	</error-page>
+
+	<servlet>
+		<display-name>indexServlet</display-name>
+		<servlet-name>indexServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.IndexServlet</servlet-class>
+		<init-param>
+			<param-name>/IndexServlet</param-name>
+			<param-value>indexServlet</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>articleServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.ArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>wordServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.WordServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>friendServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.FriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogonServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.LogXServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>forwardServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.ForwardServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>defaultServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.DefaultServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ipServlet</servlet-name>
+		<servlet-class>net.gicp.suizhikuo.servlet.IPServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>indexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>articleServlet</servlet-name>
+		<url-pattern>/ArticleServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>wordServlet</servlet-name>
+		<url-pattern>/WordServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>friendServlet</servlet-name>
+		<url-pattern>/FriendServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogonServlet</servlet-name>
+		<url-pattern>/LogonServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>forwardServlet</servlet-name>
+		<url-pattern>/ForwardServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>defaultServlet</servlet-name>
+		<url-pattern>/DefaultServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ipServlet</servlet-name>
+		<url-pattern>/IPServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
